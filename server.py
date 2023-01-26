@@ -183,7 +183,7 @@ class MyWebServer(socketserver.BaseRequestHandler):
                         # Source author: Acorn
                         # Source License: CC BY-SA 3.0
                         # Latest date contributed: May 5th, 2011
-                        # https://stackoverflow.com/questions/5899497/how-can-i-check-the-extension-of-a-file 
+                        # URL: https://stackoverflow.com/questions/5899497/how-can-i-check-the-extension-of-a-file 
                         if os.path.splitext(full_path)[-1].lower()==".html":
                             self.send200(content, "html")
 
