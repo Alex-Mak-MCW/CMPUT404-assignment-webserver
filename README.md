@@ -25,4 +25,5 @@ compatible) http://docs.python.org/2/library/socketserver.html
 
 Alex Mak has also created and contributed 2 new files: root.png and deep.png to demonstrate his work for this assignment.
 
-Here are the citations where Alex Mak have used when he was compelting this assignment:
+Here are the sources Alex Mak have used when he was completing this assignment:
+1. 
