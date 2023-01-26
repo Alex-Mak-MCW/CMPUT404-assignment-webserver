@@ -40,7 +40,8 @@ class MyWebServer(socketserver.BaseRequestHandler):
     # User-defined method to send 200 responses based on content type(ext)
     # Learned the format of the HTTP 200 response status code from the source below
 
-    # Source Type: Website URL
+    # Source Title: 200 OK
+    # Source Type: Website
     # Source author: Mozilla
     # Source License: CC BY-SA 2.5
     # URL: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200
@@ -51,7 +52,9 @@ class MyWebServer(socketserver.BaseRequestHandler):
     # User-defined method to handle all the cases that leads to 404 and send the 404 response
     # Learned the format of the HTTP 404 response status code from the source below
 
-    # Source Type: Website URL
+    
+    # Source Title: 404 Not Found
+    # Source Type: Website
     # Source author: Mozilla
     # Source License: CC BY-SA 2.5
     # URL: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
@@ -66,7 +69,8 @@ class MyWebServer(socketserver.BaseRequestHandler):
 
         # Convert data from bytes array to string, learned from the source below
 
-        # Source Type: Website URL
+        # Source Title: Convert bytes to a string
+        # Source Type: Website
         # Source contributor: Aaron Maenppa(author) and Mateen Ulhaq (editor)
         # Source License: CC BY-SA 4.0
         # Latest date contributed: June 6th, 2022
@@ -89,7 +93,8 @@ class MyWebServer(socketserver.BaseRequestHandler):
         # if the decoded data is empty (just incase) -> send 400 Bad Request response
         # Learned the format of the HTTP 400 response status code from the source below
 
-        # Source Type: Website URL
+        # Source Title: 400 Bad Request
+        # Source Type: Website
         # Source author: Mozilla
         # Source License: CC BY-SA 2.5
         # URL: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
@@ -104,7 +109,8 @@ class MyWebServer(socketserver.BaseRequestHandler):
             # if the request type belong to one of the 3 methods we cannot handle (POST, PUT, DELETE), then send 405 request
             # Learned the format of the HTTP 405 response status code from the source below
 
-            # Source Type: Website URL
+            # Source Title: 405 Method Not Allowed
+            # Source Type: Website
             # Source author: Mozilla
             # Source License: CC BY-SA 2.5
             # URL: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/405
@@ -121,7 +127,8 @@ class MyWebServer(socketserver.BaseRequestHandler):
                 # handling directory, check whether file is in a directory
                 # Learned how to do so using the os and os.path modules and the method os.path.isdir from the source below
 
-                # Source Type: Website URL
+                # Source Title: Python: Check if a File or Directory Exists
+                # Source Type: Website
                 # Source author: Nikhil Aggarwal
                 # Source License: CC BY-SA 
                 # Latest date contributed: October 21st, 2022
@@ -143,7 +150,8 @@ class MyWebServer(socketserver.BaseRequestHandler):
                     # if directory existed but doesn't end with "/", then send 301 message with the redirected path
                     # Learned the format of the HTTP 301 response status code from the source below
 
-                    # Source Type: Website URL
+                    # Source Title: 301 Moved Permanently
+                    # Source Type: Website
                     # Source author: Mozilla
                     # Source License: CC BY-SA 2.5
                     # URL: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/301
@@ -154,7 +162,8 @@ class MyWebServer(socketserver.BaseRequestHandler):
                 # File part: check whether the path has a file or not
                 # Learned how to do so using the os and os.path modules and the method os.path.isfile from the source below
 
-                # Source Type: Website URL
+                # Source Title: How to Check if a File Exists in Python with isFile() and exists()
+                # Source Type: Website
                 # Source author: Dionysia Lemonaki
                 # Source License: BSD-3
                 # Latest date contributed: January 5th, 2023
@@ -168,7 +177,9 @@ class MyWebServer(socketserver.BaseRequestHandler):
                         # if the file is html type, then send 200 code with html content
 
                         # Learned from the source below to use the os.path.splittext() method to get parts of a path in order to obtain a path's file extension.
-                        # Source Type: Website URL
+                        
+                        # Source Title: How can I check the extension of a file?
+                        # Source Type: Website
                         # Source author: Acorn
                         # Source License: CC BY-SA 3.0
                         # Latest date contributed: May 5th, 2011
