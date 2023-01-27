@@ -61,7 +61,7 @@ class MyWebServer(socketserver.BaseRequestHandler):
     # Latest date contributed: November 26th, 2022
     # URL: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
     def send404(self):
-        newbytearray="HTTP/1.1 404 Not Found\r\nPath Not Found\r\n"
+        newbytearray="HTTP/1.1 404 Not Found\r\nPath Not Found\r\n\r\n"
         self.request.sendall(bytearray(newbytearray, "utf-8"))
 
     # Main method for the server to handle the requests
