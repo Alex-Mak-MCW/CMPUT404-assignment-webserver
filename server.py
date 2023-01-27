@@ -42,8 +42,9 @@ class MyWebServer(socketserver.BaseRequestHandler):
 
     # Source Title: 200 OK
     # Source Type: Website
-    # Source author: Mozilla
+    # Source author: MDN contributors (https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200/contributors.txt)
     # Source License: CC BY-SA 2.5
+    # Latest date contributed: November 26th, 2022
     # URL: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200
     def send200(self, content, ext):
         newbytearray='HTTP/1.1 200 OK\r\nContent-Type:text/'+ext+'\r\n\r\n'+content
@@ -55,8 +56,9 @@ class MyWebServer(socketserver.BaseRequestHandler):
     
     # Source Title: 404 Not Found
     # Source Type: Website
-    # Source author: Mozilla
+    # Source author: MDN contributors (https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404/contributors.txt)
     # Source License: CC BY-SA 2.5
+    # Latest date contributed: November 26th, 2022
     # URL: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
     def send404(self):
         newbytearray="HTTP/1.1 404 Not Found\r\nPath Not Found\r\n"
@@ -86,7 +88,7 @@ class MyWebServer(socketserver.BaseRequestHandler):
         path=HTTP_header.split()[1]
         full_path="./www"+path
 
-        # Temp byte array used to send http responses
+        # Temporary byte array used to send http responses in the future
         newbytearray=''
 
         # Basic check: Empty data
@@ -95,8 +97,9 @@ class MyWebServer(socketserver.BaseRequestHandler):
 
         # Source Title: 400 Bad Request
         # Source Type: Website
-        # Source author: Mozilla
+        # Source author: MDN contributors (https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400/contributors.txt)
         # Source License: CC BY-SA 2.5
+        # Latest date contributed: November 26th, 2022
         # URL: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
         if not str_data:
             newbytearray='HTTP/1.1 400 Bad Request\r\n\r\n'
@@ -111,8 +114,9 @@ class MyWebServer(socketserver.BaseRequestHandler):
 
             # Source Title: 405 Method Not Allowed
             # Source Type: Website
-            # Source author: Mozilla
+            # Source author: MDN contributors (https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/405/contributors.txt)
             # Source License: CC BY-SA 2.5
+            # Latest date contributed: November 26th, 2022
             # URL: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/405
             if request_method in restricted_methods:
                 newbytearray='HTTP/1.1 405 Method Not Allowed\r\n\r\n'
@@ -152,8 +156,9 @@ class MyWebServer(socketserver.BaseRequestHandler):
 
                     # Source Title: 301 Moved Permanently
                     # Source Type: Website
-                    # Source author: Mozilla
+                    # Source author: MDN contributors (https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/301/contributors.txt)
                     # Source License: CC BY-SA 2.5
+                    # Latest date contributed: November 26th, 2022
                     # URL: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/301
                     else:
                         newbytearray="HTTP/1.1 301 Moved Permanently\r\nLocation: "+path+"/\r\n"
