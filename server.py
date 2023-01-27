@@ -70,11 +70,11 @@ class MyWebServer(socketserver.BaseRequestHandler):
         # Convert data from bytes array to string, learned from the source below
 
         # Source Title: Convert bytes to a string
-        # Source Type: Website
-        # Source contributor: Aaron Maenppa(author) and Mateen Ulhaq (editor)
+        # Source Type: Website (StackOverflow)
+        # Source contributor: Aaron Maenppa(author, URL: https://stackoverflow.com/users/2603/aaron-maenpaa) and Mateen Ulhaq (editor, URL: https://stackoverflow.com/users/365102/mateen-ulhaq)
         # Source License: CC BY-SA 4.0
         # Latest date contributed: June 6th, 2022
-        # URL: https://stackoverflow.com/questions/606191/convert-bytes-to-a-string
+        # Resource URI: https://stackoverflow.com/questions/606191/convert-bytes-to-a-string
         str_data=self.data.decode("utf-8")
 
         # Get each line percisely using list object to split lines
@@ -179,11 +179,11 @@ class MyWebServer(socketserver.BaseRequestHandler):
                         # Learned from the source below to use the os.path.splittext() method to get parts of a path in order to obtain a path's file extension.
                         
                         # Source Title: How can I check the extension of a file?
-                        # Source Type: Website
-                        # Source author: Acorn
+                        # Source Type: Website (StackOverflow)
+                        # Source author: Acorn (URL: https://stackoverflow.com/users/311220/acorn)
                         # Source License: CC BY-SA 3.0
                         # Latest date contributed: May 5th, 2011
-                        # URL: https://stackoverflow.com/questions/5899497/how-can-i-check-the-extension-of-a-file 
+                        # Resource URI: https://stackoverflow.com/questions/5899497/how-can-i-check-the-extension-of-a-file 
                         if os.path.splitext(full_path)[-1].lower()==".html":
                             self.send200(content, "html")
 
